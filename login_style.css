@@ -28,8 +28,9 @@
   width: 31.25em;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  right: -268px;
+  ;
 }
 
 form {
@@ -128,7 +129,7 @@ button:hover::before {
   width: 100%;
 }
 
-.panda-face {
+/* .panda-face {
   height: 7.5em;
   width: 8.4em;
   background-color: #ffffff;
@@ -329,7 +330,7 @@ button:hover::before {
   top: 0.31em;
   left: 1.12em;
   box-shadow: 0.87em 0.37em #ffffff, -0.87em 0.37em #ffffff;
-}
+} */
 
 @media screen and (max-width: 500px) {
   .container {
@@ -337,103 +338,848 @@ button:hover::before {
   }
 }
 
+/* srarting of ticket css*/
 
-/* Ticket CSS starting */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
+  /* background-image: url('bg-img1.jpg'); */
 
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap");
-
-:root {
-  --border-color: #d43b39;
-  --red: #f54949;
-  --text-black: #322523;
-  -webkit-padding-start: 20px;
 }
 
-/* * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: inherit;
-} */
-
-/* body {
-	height: 100vh;
-	display: grid;
-	place-items: center;
-	font-family: Archivo;
-	font-variation-settings: ;
-	color: var(--text-black);
-	background-color: #ceedf4;
-} */
-
-svg {
-  position: fixed;
-}
-
-#roughpaper {
-  opacity: 0.2;
-}
-
-.ticket {
-  filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.2)) blur(0.2px);
+.container {
+  display: flex;
+  align-items: center;
   position: relative;
-  /* position of ticket box layout */
-  top: 25%;
 }
 
-.ticket::after {
-  content: "";
-  filter: url("#roughpaper");
-  clip-path: path("M4.3542 116.355C17.3259 117.282 20.7794 127.838 20.8847 133C91.2186 132.93 235.192 132.79 248.417 132.79C250.733 118.568 264.421 116.04 265.263 115.829C266.106 115.619 265.263 113.512 265.263 112.985C265.263 112.458 263.263 111.931 263.263 110.141C263.263 108.35 264.632 106.875 265.263 106.453C265.895 106.032 265.895 102.872 265.895 102.134C265.895 101.397 262.842 99.7112 262.842 97.7096C262.842 95.708 265.158 94.4438 265.895 91.5994C266.632 88.7551 263.263 87.8069 262.842 84.9626C262.42 82.1182 265.895 82.2235 265.895 79.0631C265.895 75.9027 262.842 76.1134 262.842 73.269C262.842 70.4247 265.369 70.3193 265.895 67.0535C266.421 63.7878 262.842 63.261 262.842 60.522C262.842 57.783 265.369 58.099 265.895 54.4119C266.421 50.7247 262.842 49.9873 262.842 47.9857C262.842 45.9841 265.79 43.2451 265.895 41.8756C265.895 39.5 263.263 38.9258 262.842 36.3975C262.42 33.8692 265.369 32.605 265.369 29.6553C265.369 26.7055 262.526 25.7574 262.526 23.9665C262.315 21.9649 267.369 19.4366 261.999 17.3296C253.66 15.6441 249.259 5.7409 248.101 1H22.6751C22.6751 1 21.7275 1.00095 21.7275 1.63208C17.9371 18.2769 6.77635 17.3286 6.03932 17.3286C5.30229 17.3286 5.51287 16.4859 3.72294 18.3821C1.93301 20.2784 4.3542 22.8067 4.3542 27.3366C4.3542 31.8665 1.61708 33.4467 2.14359 35.027C2.6701 36.6072 4.3542 37.1339 4.3542 40.821C4.3542 44.5082 1.82766 43.3494 1.09063 45.7724C0.353596 48.1954 4.3542 48.5114 4.3542 52.3039C4.3542 56.0964 1.61708 54.0948 1.61708 57.9927C1.61708 61.8905 4.3542 60.3103 4.3542 63.9975C4.3542 67.6846 1.61708 67.6846 1.61708 70.845C1.61708 74.0054 4.3542 74.1108 4.3542 77.1659C4.3542 80.2209 1.61708 79.7995 1.61708 82.3279C1.61708 84.8562 4.3542 86.9632 4.3542 89.1754C4.3542 91.3877 1.61708 92.5466 1.61708 94.8642C1.61708 97.1818 4.3542 100.132 4.3542 101.712C4.3542 103.292 2.03824 106.242 2.03824 108.033C2.03824 109.465 3.23125 111.86 3.82775 112.879C3.82775 113.511 4.35457 114.986 4.3542 116.355Z"
-    );
+.left {
+  width: 55em;
+  height: 33em;
+  background: black;
+}
+
+.left-inside {
+  width: 54em;
+  height: 30em;
+  background-color: #F7EC7D;
   position: absolute;
-  inset: 0;
+  left: 30px; 
 }
 
-p {
-  z-index: 2;
-  padding: 0.8rem 1.2rem;
-  position: relative;
-  font-size: 3rem;
-  font-stretch: 85%;
-  font-weight: 800;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: -1px;
-  display: grid;
-  /* widht and heitht of ticket box layout respectively */
-  grid-template-columns: 200px min-content 200px;
-  grid-template-rows: 300px;
-  filter: url("#warp");
-  mix-blend-mode: multiply;
-  transform: scale(0.95) translatex(-6px);
-
+.right {
+  width: 27em;
+  height: 33em;
+  /* background: #E38F66; */
+  background: black;
 }
 
-span {
-  border: 3.5px solid var(--border-color);
-  padding: 0 0.75rem;
+.cir1 {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  /* margin: -100px 0px 0px -20px; */
+  /* margin is set as negative here so because of this even if make div named as container
+  position relartive and make this cir1 class position absolute and top=0 then also this div cir1 will go out of the 
+  div container */
+  top: -25px;
+  left: -25px;
+  z-index: 5;
 }
 
-p::after,
-p::before {
-  content: "123456";
-  font-size: 1.8rem;
-  font-stretch: 85%;
-  font-weight: 400;
-  writing-mode: vertical-lr;
-  border: 3.5px solid var(--border-color);
-  letter-spacing: 1px;
+.cir2 {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  /* margin: 100px 0px 0px -20px; */
+  bottom: -25px;
+  left: -25px;
+  z-index: 5;
 }
 
-p::after {
-  border-left: none;
-  border-bottom-right-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
+
+.cir3 {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 0 0 50% 50%;
+  /* this convert div into U shape*- top-left, top-right, bottom-right , bottom-left*/
+  position: absolute;
+  /* margin: 0px 0px 100px 180px; */
+  top: -30px;
+  right: 392px;
+  z-index: 5;
 }
 
-p::before {
-  border-right: none;
-  border-bottom-left-radius: 0.75rem;
-  border-top-left-radius: 0.75rem;
+.cir4 {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  /* margin: 0px 0px -100px 180px; */
+  bottom: -30px;
+  right: 392px;
+  z-index: 5;
+}
+
+.cir5 {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  /* margin: 0px 0px 100px 130px; */
+  top: -25px;
+  right: -25px;
+}
+
+.cir6 {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  /* margin: 0px 0px -100px 130px; */
+  right: -25px;
+  bottom: -25px;
+}
+
+.cir1-overlay{
+  width: 70px;
+  height: 70px;
+  background:black;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 1;
+}
+
+.cir2-overlay{
+  width: 70px;
+  height: 70px;
+  background:black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  z-index: 1;
+}
+
+.cir3-overlay{
+  width: 80px;
+  height: 80px;
+  background:black;
+  border-radius:50%;
+  position: absolute;
+  right: 403px;
+  top: -7px;
+  z-index: 1;
+}
+
+.cir4-overlay{
+  width: 80px;
+  height: 80px;
+  background:black;
+  border-radius:50%;
+  position: absolute;
+  right: 403px;
+  bottom: -13px;
+  z-index: 1;
+}
+
+
+
+.left-cir1 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 60px;
+  left: -5px;
+}
+
+.left-cir2 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 80px;
+  left: -5px;
+}
+
+.left-cir3 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 100px;
+  left: -5px;
+}
+
+.left-cir4 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 120px;
+  left: -5px;
+}
+
+.left-cir5 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 140px;
+  left: -5px;
+}
+
+.left-cir6 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 160px;
+  left: -5px;
+}
+
+.left-cir7 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 180px;
+  left: -5px;
+}
+
+.left-cir8 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 200px;
+  left: -5px;
+}
+
+.left-cir9 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 220px;
+  left: -5px;
+}
+
+.left-cir10 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 240px;
+  left: -5px;
+}
+
+.left-cir11 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 260px;
+  left: -5px;
+}
+
+.left-cir12 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 280px;
+  left: -5px;
+}
+
+.left-cir13 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 300px;
+  left: -5px;
+}
+
+.left-cir14 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 320px;
+  left: -5px;
+}
+
+.left-cir15 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 340px;
+  left: -5px;
+}
+
+.left-cir16 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 360px;
+  left: -5px;
+}
+
+
+.left-cir17 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 380px;
+  left: -5px;
+}
+
+.left-cir18 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 380px;
+  left: -5px;
+}
+
+.left-cir19 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 400px;
+  left: -5px;
+}
+
+.left-cir20 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 420px;
+  left: -5px;
+}
+
+.left-cir21 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 440px;
+  left: -5px;
+}
+
+.right-cir22 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 460px;
+  left: -5px;
+}
+
+
+.right-cir1 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 60px;
+}
+
+
+.right-cir2 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 80px;
+}
+
+
+.right-cir3 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 100px;
+}
+
+
+.right-cir4 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 120px;
+}
+
+
+.right-cir5 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 140px;
+}
+
+
+.right-cir6 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 160px;
+}
+
+
+.right-cir7 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 180px;
+}
+
+
+.right-cir8 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 200px;
+}
+
+
+.right-cir9 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 220px;
+}
+
+
+.right-cir10 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 240px;
+}
+
+
+.right-cir11 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 260px;
+}
+
+
+.right-cir12 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 280px;
+}
+
+
+.right-cir13 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 300px;
+}
+
+
+.right-cir14 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 320px;
+}
+
+
+.right-cir15 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 340px;
+}
+
+
+.right-cir16 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 360px;
+}
+
+
+.right-cir17 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 380px;
+}
+
+
+.right-cir18 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 400px;
+}
+
+
+.right-cir19 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 420px;
+}
+
+
+.right-cir20 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 440px;
+}
+
+
+.right-cir21 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: -5px;
+  top: 460px;
+}
+
+.mid-cir1 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 60px;
+}
+
+.mid-cir2 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 80px;
+}
+
+.mid-cir3 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 100px;
+}
+
+.mid-cir4 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 120px;
+}
+
+.mid-cir5 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 140px;
+}
+
+.mid-cir6 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 160px;
+}
+
+.mid-cir7 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 180px;
+}
+
+.mid-cir8 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 200px;
+}
+
+.mid-cir9 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 220px;
+}
+
+.mid-cir10 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 240px;
+}
+
+.mid-cir11 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 260px;
+}
+
+.mid-cir12 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 280px;
+}
+
+.mid-cir13 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 300px;
+}
+
+.mid-cir14 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 320px;
+}
+
+.mid-cir15 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 340px;
+}
+
+.mid-cir16 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 360px;
+}
+
+.mid-cir17 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 380px;
+}
+
+.mid-cir18 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 400px;
+}
+
+.mid-cir19 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 420px;
+}
+
+.mid-cir20 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 440px;
+}
+
+.mid-cir21 {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  position: absolute;
+  right: 412px;
+  top: 460px;
+}
+
+.t1{
+  position:absolute;
+  top: 100px;
+  left: 270px;
+  font-size: 100px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.logo{
+  position: absolute;
+  color: white;
+  right: 170px;
+  top: 50px;
+}
+
+.display{
+  background: black;
+  position: absolute;
+  color: white;
+  left: 38px;
+  font-size: 30px;
+  padding: 7px;
 }
